@@ -1,4 +1,75 @@
 
 @import './mixin';
 @import './variables';
+@import './config';
 
+
+
+body{
+    background-color: $primary-color;
+    color: $color;
+}
+
+a{
+    color: $color;
+    text-decoration: none;
+}
+
+a:hover{
+    color: $secondary-color;
+
+}
+
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    display: flex;    
+    width: 100%;
+    justify-content: end;
+    align-items: baseline;
+    justify-content: flex-start;
+    
+   
+
+ 
+}
+.footer a {
+    justify-content: end;
+    margin-left: auto;
+    padding-right: 0.7rem;
+
+   
+}
+
+.home{
+    text-align: center;
+    
+}
+
+
+
+body::selection{
+    color: $secondary-color;
+}
+
+
+
+li{
+    list-style-type: none;
+}
+
+.menu-link{ 
+    
+    padding: 0 7%;
+    margin: auto;
+}
+
+
+.menu-list-item1{
+    display: flex;
+}
+
+.menu-list-item1:last-child{
+    margin-left: auto;
+}

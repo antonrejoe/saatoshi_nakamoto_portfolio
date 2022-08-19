@@ -1,1 +1,64 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  padding: 0.2rem;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(71, 71, 71);
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(241, 149, 29);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.footer a {
+  justify-content: end;
+  margin-left: auto;
+  padding-right: 0.7rem;
+}
+
+.home {
+  text-align: center;
+}
+
+body::-moz-selection {
+  color: rgb(241, 149, 29);
+}
+
+body::selection {
+  color: rgb(241, 149, 29);
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu-link {
+  padding: 0 7%;
+  margin: auto;
+}
+
+.menu-list-item1 {
+  display: flex;
+}
+
+.menu-list-item1:last-child {
+  margin-left: auto;
+}/*# sourceMappingURL=main.css.map */
