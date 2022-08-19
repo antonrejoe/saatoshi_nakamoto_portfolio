@@ -8,6 +8,8 @@
 body{
     background-color: $primary-color;
     color: $color;
+    width: 100%;
+
 }
 
 a{
@@ -48,7 +50,17 @@ a:hover  {
 
 .home{
     text-align: center;
+    vertical-align: middle;
+    height: 50vh;
+    width: 100%;
+    display: flex;
     
+}
+
+
+.home-div{
+    text-align: center;
+    margin: auto;
 }
 
 
@@ -90,6 +102,8 @@ li{
 .my_name{
     margin-bottom: 20px;
     font-size: 2rem;
+    border-bottom: 2px;
+    border-color: $secondary-color;
 }
 
 
@@ -100,3 +114,33 @@ li{
     
     
 }
+
+
+
+//// Designing the home page
+/// 
+/// 
+.main-home{
+
+    border: 0px;
+    padding: 0px;
+    
+}
+
+// 
+//  ///////////////////////////////////
+body{
+    text-align: center;
+    background-size: cover;
+    align-items: center;
+    background: 
+    
+    linear-gradient(
+        to right,
+        rgba($primary-color,0.9),
+        rgba($primary-color,0.6)
+      ),
+      url( '../model-1.jpg')  center top ;
+      
+}
+//  //////////////////////////////////////////// 

@@ -7,9 +7,14 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+h2 {
+  font-size: 1rem;
+}
+
 body {
   background-color: rgb(71, 71, 71);
   color: white;
+  width: 100%;
 }
 
 a {
@@ -37,6 +42,15 @@ a:hover {
 
 .home {
   text-align: center;
+  vertical-align: middle;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+}
+
+.home-div {
+  text-align: center;
+  margin: auto;
 }
 
 *::-moz-selection {
@@ -79,8 +93,22 @@ li {
 .my_name {
   margin-bottom: 20px;
   font-size: 2rem;
+  border-bottom: 2px;
+  border-color: rgb(241, 149, 29);
 }
 
 a.cc {
   display: inline;
+}
+
+.main-home {
+  border: 0px;
+  padding: 0px;
+}
+
+body {
+  text-align: center;
+  background-size: cover;
+  align-items: center;
+  background: linear-gradient(to right, rgba(71, 71, 71, 0.9), rgba(71, 71, 71, 0.6)), url("../model-1.jpg") center top;
 }/*# sourceMappingURL=main.css.map */
