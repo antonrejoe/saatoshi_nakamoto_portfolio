@@ -15,8 +15,9 @@ a{
     text-decoration: none;
 }
 
-a:hover{
+a:hover  {
     color: $secondary-color;
+    
 
 }
 
@@ -27,8 +28,8 @@ a:hover{
     display: flex;    
     width: 100%;
     justify-content: end;
-    align-items: baseline;
-    justify-content: flex-start;
+    
+    
     
    
 
@@ -38,9 +39,12 @@ a:hover{
     justify-content: end;
     margin-left: auto;
     padding-right: 0.7rem;
+    
+    
+    }
 
    
-}
+
 
 .home{
     text-align: center;
@@ -49,9 +53,17 @@ a:hover{
 
 
 
-body::selection{
-    color: $secondary-color;
+*::selection{
+    background-color: $secondary-color;
 }
+a::selection{
+    background-color: $secondary-color;
+}
+
+a::before{
+    background-color: $secondary-color;
+}
+
 
 
 
@@ -72,4 +84,19 @@ li{
 
 .menu-list-item1:last-child{
     margin-left: auto;
+}
+
+
+.my_name{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+
+ a.cc{
+    display: inline;
+    
+    
+    
+    
 }

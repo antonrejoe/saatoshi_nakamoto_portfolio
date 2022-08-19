@@ -2,6 +2,9 @@
   padding: 0.2rem;
   margin: 0%;
   box-sizing: border-box;
+  line-height: 2rem;
+  overflow: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -24,8 +27,6 @@ a:hover {
   display: flex;
   width: 100%;
   justify-content: end;
-  align-items: baseline;
-  justify-content: flex-start;
 }
 
 .footer a {
@@ -38,12 +39,24 @@ a:hover {
   text-align: center;
 }
 
-body::-moz-selection {
-  color: rgb(241, 149, 29);
+*::-moz-selection {
+  background-color: rgb(241, 149, 29);
 }
 
-body::selection {
-  color: rgb(241, 149, 29);
+*::selection {
+  background-color: rgb(241, 149, 29);
+}
+
+a::-moz-selection {
+  background-color: rgb(241, 149, 29);
+}
+
+a::selection {
+  background-color: rgb(241, 149, 29);
+}
+
+a::before {
+  background-color: rgb(241, 149, 29);
 }
 
 li {
@@ -61,4 +74,13 @@ li {
 
 .menu-list-item1:last-child {
   margin-left: auto;
+}
+
+.my_name {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+a.cc {
+  display: inline;
 }/*# sourceMappingURL=main.css.map */
