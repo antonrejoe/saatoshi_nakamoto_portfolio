@@ -15,13 +15,13 @@ body{
 a{
     color: $color;
     text-decoration: none;
+    @include trans-a;
 }
 
-a:hover  {
-    color: $secondary-color;
-    
-
+a:hover{
+    @include transition-mixin;
 }
+
 
 
 .footer{
@@ -59,24 +59,26 @@ a:hover  {
 
 
 .home-div{
+    
     text-align: center;
     margin: auto;
+   
 }
 
-
+.menu a:hover , .social-media-links a:hover{
+    color: $secondary-color;
+    
+}
 
 *::selection{
     background-color: $secondary-color;
 }
-a::selection{
-    background-color: $secondary-color;
+
+
+a::after, a::before, a:hover , a::selection , a:active{
+    
+    text-decoration: none;
 }
-
-a::before{
-    background-color: $secondary-color;
-}
-
-
 
 
 li{
@@ -144,3 +146,26 @@ body{
       
 }
 //  //////////////////////////////////////////// 
+
+
+h1.my_name{
+    font-size: 3rem;
+    padding:  5% 0 ;
+    
+    border-bottom: $color 2px solid;
+    margin-bottom: 0%;
+    
+
+    & .last-name{
+        color: $secondary-color;
+        
+        
+        
+        
+    }
+    
+}
+
+
+
+

@@ -5,6 +5,7 @@
   line-height: 2rem;
   overflow: hidden;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: all, 0.5s;
 }
 
 h2 {
@@ -20,10 +21,13 @@ body {
 a {
   color: white;
   text-decoration: none;
+  transition: 0s, -webkit-text-decoration;
+  transition: text-decoration, 0s;
+  transition: text-decoration, 0s, -webkit-text-decoration;
 }
 
 a:hover {
-  color: rgb(241, 149, 29);
+  transition: all, 0.5s;
 }
 
 .footer {
@@ -53,6 +57,10 @@ a:hover {
   margin: auto;
 }
 
+.menu a:hover, .social-media-links a:hover {
+  color: rgb(241, 149, 29);
+}
+
 *::-moz-selection {
   background-color: rgb(241, 149, 29);
 }
@@ -62,15 +70,11 @@ a:hover {
 }
 
 a::-moz-selection {
-  background-color: rgb(241, 149, 29);
+  text-decoration: none;
 }
 
-a::selection {
-  background-color: rgb(241, 149, 29);
-}
-
-a::before {
-  background-color: rgb(241, 149, 29);
+a::after, a::before, a:hover, a::selection, a:active {
+  text-decoration: none;
 }
 
 li {
@@ -111,4 +115,14 @@ body {
   background-size: cover;
   align-items: center;
   background: linear-gradient(to right, rgba(71, 71, 71, 0.9), rgba(71, 71, 71, 0.6)), url("../model-1.jpg") center top;
+}
+
+h1.my_name {
+  font-size: 3rem;
+  padding: 5% 0;
+  border-bottom: white 2px solid;
+  margin-bottom: 0%;
+}
+h1.my_name .last-name {
+  color: rgb(241, 149, 29);
 }/*# sourceMappingURL=main.css.map */

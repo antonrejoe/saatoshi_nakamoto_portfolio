@@ -1,3 +1,4 @@
+@import './mixin';
 
 $primary-color : rgb(71, 71, 71);
 $secondary-color: rgb(241, 149, 29);
@@ -15,7 +16,7 @@ $color:white;
     line-height: 2rem;
     overflow: hidden;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
+    @include transition-mixin;
 }
 
 
