@@ -16,7 +16,7 @@ $color:white;
     line-height: 2rem;
     overflow: hidden;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    @include transition-mixin;
+    
 }
 
 
@@ -24,3 +24,6 @@ h2{
     font-size: 1rem;
 }
 
+a{
+    @include transition-mixin;
+}

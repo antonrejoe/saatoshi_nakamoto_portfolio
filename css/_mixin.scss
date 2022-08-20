@@ -4,7 +4,14 @@
 // transition prop
 
 @mixin transition-mixin {
-    transition: all ,0.5s ; 
+    transition: all ,0.5s  ; 
+   
+   
+ 
+}
+
+@mixin transition-mixin-value($duration) {
+    transition: all ,$duration ; 
    
    
  

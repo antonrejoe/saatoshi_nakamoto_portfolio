@@ -1,0 +1,53 @@
+
+
+////// animation ========================== animation \\\\\\\\\\\\\
+
+@import './mixin';
+
+.hide{
+     visibility: hidden;    
+    @include transition-mixin-value(0.5);
+}
+
+
+
+.rot_up{
+    transform: rotate(45deg) translateY(10px) translateX(15px)  ;
+    @include transition-mixin;
+    width: 30px;
+    height: 0.01em;
+    overflow: visible;
+    z-index: 2;
+    border: 0px;
+    padding: 0.09em;
+    
+}
+
+
+.rot_down{
+    transform: rotate(-45deg) translateY(0) translateX(2px);
+    @include transition-mixin;
+    width: 30px;
+    overflow: visible;
+    z-index: 2;
+    height: 0.01em;
+    border: 0px;
+    padding: 0.09em;
+}
+
+
+._hamburger{
+    height: 50px;
+}
+
+
+.above , .below {
+    @include transition-mixin;
+    .mid{
+        visibility: hidden;
+    }
+}
+
+.mid{
+    @include transition-mixin-value(0);
+}

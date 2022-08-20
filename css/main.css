@@ -5,11 +5,14 @@
   line-height: 2rem;
   overflow: hidden;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  transition: all, 0.5s;
 }
 
 h2 {
   font-size: 1rem;
+}
+
+a {
+  transition: all, 0.5s;
 }
 
 span.hamburger {
@@ -30,9 +33,46 @@ span.hamburger {
   width: 40px;
 }
 
-._hamburger:hover {
-  flex-direction: column;
-  width: 10px;
+.hide {
+  visibility: hidden;
+  transition: all, 0.5;
+}
+
+.rot_up {
+  transform: rotate(45deg) translateY(10px) translateX(15px);
+  transition: all, 0.5s;
+  width: 30px;
+  height: 0.01em;
+  overflow: visible;
+  z-index: 2;
+  border: 0px;
+  padding: 0.09em;
+}
+
+.rot_down {
+  transform: rotate(-45deg) translateY(0) translateX(2px);
+  transition: all, 0.5s;
+  width: 30px;
+  overflow: visible;
+  z-index: 2;
+  height: 0.01em;
+  border: 0px;
+  padding: 0.09em;
+}
+
+._hamburger {
+  height: 50px;
+}
+
+.above, .below {
+  transition: all, 0.5s;
+}
+.above .mid, .below .mid {
+  visibility: hidden;
+}
+
+.mid {
+  transition: all, 0;
 }
 
 body {
