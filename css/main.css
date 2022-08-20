@@ -12,6 +12,29 @@ h2 {
   font-size: 1rem;
 }
 
+span.hamburger {
+  content: "";
+  border-radius: 1rem;
+  display: block;
+  position: relative;
+  background-color: white;
+}
+
+._hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+  margin: auto;
+  width: 5px;
+  width: 40px;
+}
+
+._hamburger:hover {
+  flex-direction: column;
+  width: 10px;
+}
+
 body {
   background-color: rgb(71, 71, 71);
   color: white;
@@ -21,9 +44,6 @@ body {
 a {
   color: white;
   text-decoration: none;
-  transition: 0s, -webkit-text-decoration;
-  transition: text-decoration, 0s;
-  transition: text-decoration, 0s, -webkit-text-decoration;
 }
 
 a:hover {
@@ -82,8 +102,10 @@ li {
 }
 
 .menu-link {
-  padding: 0 7%;
+  display: inline-block;
+  padding: 0;
   margin: auto;
+  font-size: 1.3rem;
 }
 
 .menu-list-item1 {

@@ -2,7 +2,7 @@
 @import './mixin';
 @import './variables';
 @import './config';
-
+@import './menubar';
 
 
 body{
@@ -15,7 +15,7 @@ body{
 a{
     color: $color;
     text-decoration: none;
-    @include trans-a;
+    
 }
 
 a:hover{
@@ -86,14 +86,16 @@ li{
 }
 
 .menu-link{ 
-    
-    padding: 0 7%;
+    display: inline-block;
+    padding: 0;
     margin: auto;
+    font-size: 1.3rem;
 }
 
 
 .menu-list-item1{
     display: flex;
+    
 }
 
 .menu-list-item1:last-child{

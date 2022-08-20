@@ -1,0 +1,45 @@
+
+
+//  
+//  tryn' to deal with the menubar
+
+
+span.hamburger{
+    content: '';
+    
+    border-radius: 1rem;
+    display: block;
+    position: relative;
+    background-color: $color;
+    
+    
+}
+
+
+._hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+    margin: auto ;
+    width: 5px;
+    width: 40px;
+    
+}
+
+
+@mixin menu-bar-animation {
+    flex-direction: column;
+    
+    width: 10px;
+    
+}
+
+
+
+._hamburger:hover{
+    @include menu-bar-animation;
+
+}
+
+
