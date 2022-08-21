@@ -82,11 +82,13 @@ function show_navbar()
 
     if($nav_bar_closed === 'hidden'){
         document.querySelector( 'li.menu-list-item1.active' ).style.visibility = $nav_bar_open;
+        
         return $nav_bar_closed = visible
     }
     
     if($nav_bar_closed === visible){
         document.querySelector( 'li.menu-list-item1.active' ).style.visibility = hidden;
+       
         return $nav_bar_closed = hidden 
     }
    
