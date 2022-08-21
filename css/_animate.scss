@@ -51,3 +51,9 @@
 .mid{
     @include transition-mixin-value(0);
 }
+
+
+.rotate_720{
+    transform: rotate(720deg);
+}
+

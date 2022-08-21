@@ -4,6 +4,8 @@ $primary-color : rgb(71, 71, 71);
 $secondary-color: rgb(241, 149, 29);
 $color:white;
 
+$full_view :100vh;
+
 ///some basic setup
 /// 
 /// 
@@ -24,6 +26,14 @@ h2{
     font-size: 1rem;
 }
 
-a{
+a.link-items1{
     @include transition-mixin;
+}
+
+.home{
+    padding: 0;
+}
+
+.footer{
+    padding: 0;
 }

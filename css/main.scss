@@ -4,7 +4,7 @@
 @import './config';
 @import './menubar';
 @import './animate';
-
+@import './nav-bar';
 
 body{
     background-color: $primary-color;
@@ -34,6 +34,7 @@ a:hover{
     
     
     
+    
    
 
  
@@ -56,14 +57,17 @@ a:hover{
     width: 100%;
     display: flex;
     
+    
 }
 
 
 .home-div{
     
-    text-align: center;
+    position: relative;
+    z-index: 1;
     margin: auto;
-   
+    padding: 0;
+    
 }
 
 .menu a:hover , .social-media-links a:hover{
@@ -84,6 +88,8 @@ a::after, a::before, a:hover , a::selection , a:active{
 
 li{
     list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 .menu-link{ 
@@ -94,6 +100,11 @@ li{
     text-shadow: 3px 3px 3px black;
 }
 
+li.menu-list-item1{
+    padding: 0%;
+    margin: 0%;
+
+}
 
 .menu-list-item1{
     display: flex;
@@ -168,6 +179,15 @@ h1.my_name{
         
     }
     
+}
+
+
+section.home{
+    margin: 0;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
 }
 
 

@@ -18,13 +18,20 @@ span.hamburger{
 
 
 ._hamburger{
-    display: flex;
+    display: flex ;
     flex-direction: column;
     gap: 5px;
     height: 100%;
-    margin: auto ;
+    
     width: 5px;
     width: 40px;
+    position: absolute;
+    z-index: 4;
+    margin: 2%;
+    left: 85%;
+    top: 2%;
+
+    
     
     
 }

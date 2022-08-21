@@ -11,8 +11,16 @@ h2 {
   font-size: 1rem;
 }
 
-a {
+a.link-items1 {
   transition: all, 0.5s;
+}
+
+.home {
+  padding: 0;
+}
+
+.footer {
+  padding: 0;
 }
 
 span.hamburger {
@@ -28,9 +36,13 @@ span.hamburger {
   flex-direction: column;
   gap: 5px;
   height: 100%;
-  margin: auto;
   width: 5px;
   width: 40px;
+  position: absolute;
+  z-index: 4;
+  margin: 2%;
+  left: 85%;
+  top: 2%;
 }
 
 .hide {
@@ -75,6 +87,63 @@ span.hamburger {
   transition: all, 0;
 }
 
+.rotate_720 {
+  transform: rotate(720deg);
+}
+
+nav.nav .menu-list-item1 {
+  height: 100vh;
+  background-color: rgb(59, 59, 59);
+  padding: 0px;
+  z-index: 2;
+  flex-direction: column;
+  position: fixed;
+  opacity: 0.97;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+.nav-visibility {
+  visibility: visible;
+}
+
+nav.nav {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list {
+  padding: 0;
+  margin: 0px;
+}
+
+menu-list-item1.active {
+  padding: 0;
+}
+
+span.menu {
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+div.menu-btn {
+  padding: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: rgb(71, 71, 71);
   color: white;
@@ -113,8 +182,10 @@ a:hover {
 }
 
 .home-div {
-  text-align: center;
+  position: relative;
+  z-index: 1;
   margin: auto;
+  padding: 0;
 }
 
 .menu a:hover, .social-media-links a:hover {
@@ -139,6 +210,8 @@ a::after, a::before, a:hover, a::selection, a:active {
 
 li {
   list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .menu-link {
@@ -147,6 +220,11 @@ li {
   margin: auto;
   font-size: 1.1rem;
   text-shadow: 3px 3px 3px black;
+}
+
+li.menu-list-item1 {
+  padding: 0%;
+  margin: 0%;
 }
 
 .menu-list-item1 {
@@ -188,4 +266,11 @@ h1.my_name {
 }
 h1.my_name .last-name {
   color: rgb(241, 149, 29);
+}
+
+section.home {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
