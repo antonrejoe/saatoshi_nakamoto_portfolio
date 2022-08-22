@@ -106,6 +106,13 @@ nav.nav .menu-list-item1 {
   width: 100%;
   height: 100%;
   visibility: hidden;
+  transform: translateY(-100vh);
+  transition: all, 0.5s;
+}
+
+.translate-anim {
+  transition: all, 0.5s;
+  transform: translateY(0vh);
 }
 
 .nav-visibility {
@@ -225,6 +232,7 @@ li {
 li.menu-list-item1 {
   padding: 0%;
   margin: 0%;
+  display: flex;
 }
 
 .menu-list-item1 {

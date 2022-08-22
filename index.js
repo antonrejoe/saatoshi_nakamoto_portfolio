@@ -60,6 +60,7 @@ function visibleNavar() {
         
         document.querySelector('.menu-list-item1').classList.add('nav-visibility');
         document.querySelector('nav').classList.add('nav-visibility');
+        
 
          return   state_of_navbar += 1
     }else{
@@ -77,20 +78,32 @@ function visibleNavar() {
  var visible = 'visible'
  var hidden = 'hidden'
 
+
+ const nav_bar =  document.getElementById('li.menu-list-item1.active').style 
+const nav_bar_trans = nav_bar.transform 
+const nav_bar_trans_value = 'nav_bar_trans = translateY'
+
 function show_navbar()
 {
 
-    if($nav_bar_closed === 'hidden'){
+    if($nav_bar_closed === 'hidden' || nav_bar_trans_value === '-100vh'  ){
         document.querySelector( 'li.menu-list-item1.active' ).style.visibility = $nav_bar_open;
-        
-        return $nav_bar_closed = visible
+        document.getElementById('li.menu-list-item1.active').style.transform = "translateY(0vh)";
+        nav_bar_trans = 'translateY(0vh)' 
+        return $nav_bar_closed = visible, nav_bar_trans_value = '0vh '
     }
     
-    if($nav_bar_closed === visible){
+    if($nav_bar_closed === visible ||nav_bar_trans_value === '00vh' ){
         document.querySelector( 'li.menu-list-item1.active' ).style.visibility = hidden;
-       
-        return $nav_bar_closed = hidden 
+        document.getElementById('li.menu-list-item1.active').style.transform = "translateY(-100vh)";
+        nav_bar_trans = 'translateY(0vh)'
+        return $nav_bar_closed = hidden ,nav_bar_trans_value = '-100vh '
     }
    
 
 };
+
+
+
+
+
