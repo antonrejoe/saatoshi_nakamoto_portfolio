@@ -79,31 +79,30 @@ function visibleNavar() {
  var hidden = 'hidden'
 
 
- const nav_bar =  document.getElementById('li.menu-list-item1.active').style 
-const nav_bar_trans = nav_bar.transform 
-const nav_bar_trans_value = 'nav_bar_trans = translateY'
+ const nav_bar =  document.querySelector('li.menu-list-item1.active')
+
+ var $zero_view = '0vh' ;
+var $full_view = '-100vh' ;
 
 function show_navbar()
 {
 
-    if($nav_bar_closed === 'hidden' || nav_bar_trans_value === '-100vh'  ){
+    if($nav_bar_closed === 'hidden' ){
         document.querySelector( 'li.menu-list-item1.active' ).style.visibility = $nav_bar_open;
-        document.getElementById('li.menu-list-item1.active').style.transform = "translateY(0vh)";
-        nav_bar_trans = 'translateY(0vh)' 
-        return $nav_bar_closed = visible, nav_bar_trans_value = '0vh '
+       
+        return $nav_bar_closed = visible 
     }
-    
-    if($nav_bar_closed === visible ||nav_bar_trans_value === '00vh' ){
+        if($nav_bar_closed === visible  ){
         document.querySelector( 'li.menu-list-item1.active' ).style.visibility = hidden;
-        document.getElementById('li.menu-list-item1.active').style.transform = "translateY(-100vh)";
-        nav_bar_trans = 'translateY(0vh)'
-        return $nav_bar_closed = hidden ,nav_bar_trans_value = '-100vh '
+        
+        return $nav_bar_closed = hidden 
     }
    
 
+
+
+
 };
-
-
 
 
 
