@@ -88,9 +88,26 @@ span.hamburger {
 }
 
 .rotate_720 {
-  transform: rotate(720deg);
+  transform: rotate(-720deg);
 }
 
+@-webkit-keyframes simply {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes simply {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .menu-list-item1, .translate-anim-2, .translate-anim-1 {
   height: 100vh;
   background-color: rgb(59, 59, 59);
@@ -105,9 +122,19 @@ span.hamburger {
   right: 0;
   width: 100%;
   height: 100%;
-  visibility: hidden;
+  transition: all, 0.5s;
+  transform: translateX(100vw);
+  opacity: 0;
 }
 
+@keyframes simply {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .translate-anim-1 {
   transition: all, 0.5s;
   visibility: visible;
@@ -198,6 +225,7 @@ a:hover {
   z-index: 1;
   margin: auto;
   padding: 0;
+  margin-bottom: auto;
 }
 
 .menu a:hover, .social-media-links a:hover {

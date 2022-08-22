@@ -15,8 +15,9 @@
     right: 0;
     width: 100%;
     height: 100%;
-    
-    visibility: hidden;
+    @include transition-mixin;
+    transform: translateX(100vw);
+    opacity: 0;
   
     
     
@@ -26,6 +27,17 @@
     
     
 } 
+
+@keyframes  simply{
+
+    0%{
+        width: 0%
+    }
+    
+    100%{
+        width: 100%
+    }
+}
 
 
 

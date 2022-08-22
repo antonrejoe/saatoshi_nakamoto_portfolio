@@ -55,6 +55,20 @@
 
 .rotate_720{
     
-    transform: rotate(720deg);
+    transform: rotate(-720deg);
+    @include transition-mixin;
+    @include simply;
 }
 
+@keyframes  simply{
+
+    0%{
+        width: 0%;
+    }
+    
+    
+
+    100%{
+        width: 100%;
+    }
+}
