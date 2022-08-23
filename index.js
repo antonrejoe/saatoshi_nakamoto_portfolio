@@ -8,6 +8,7 @@ hamburger.addEventListener('click', animateHamburger);
 
 hamburger.addEventListener('click', show_navbar);
 
+hamburger.addEventListener('click', rotate_burger);
 
 var state_of_burger = 0;
 
@@ -25,7 +26,8 @@ function animateHamburger()
 {
     if(state_of_burger == 0)
     {
-        document.querySelector('._hamburger').classList.add('rotate_720');
+        
+        
         document.querySelector('.hamburger.mid').classList.add('hide');
         document.querySelector('.hamburger.above').classList.add('rot_up');
         document.querySelector('.hamburger.below').classList.add('rot_down');
@@ -36,7 +38,8 @@ function animateHamburger()
         document.querySelector('.hamburger.mid').classList.remove('hide');
         document.querySelector('.hamburger.above').classList.remove('rot_up');
         document.querySelector('.hamburger.below').classList.remove('rot_down');
-        document.querySelector('._hamburger').classList.remove('rotate_720');
+       
+        
         // document.getElementById('._hamburger').addEventListener('mouseover',function () {
         
         //     document.getElementById('._hamburger').style.backgroundColor='red';
@@ -113,5 +116,10 @@ function show_navbar()
 
 };
 
+
+function rotate_burger() {
+    
+    document.querySelector('._hamburger').classList.toggle('hamburger-rot');
+}
 
 

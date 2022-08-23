@@ -36,10 +36,31 @@
 }
 
 
-._hamburger{
+.hamburger-rot{
     height: 50px;
-}
+    
+    animation-fill-mode: forwards;
+    animation: rotate 0.5s 1;
 
+    
+    
+    
+}
+    
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    
+
+    100%{
+        transform: rotate(720deg);
+    }
+
+
+}
 
 .above , .below {
     @include transition-mixin;
@@ -56,8 +77,10 @@
 .rotate_720{
     
     transform: rotate(-720deg);
-    @include transition-mixin;
-    @include simply;
+    @include transition_🥪;
+    animation: rotate 2s infinite;
+    animation:forwards;
+    
 }
 
 @keyframes  simply{

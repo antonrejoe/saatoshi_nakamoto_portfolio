@@ -43,6 +43,7 @@ span.hamburger {
   margin: 2%;
   left: 85%;
   top: 2%;
+  box-shadow: black 2px 2px 1;
 }
 
 .hide {
@@ -72,10 +73,31 @@ span.hamburger {
   padding: 0.09em;
 }
 
-._hamburger {
+.hamburger-rot {
   height: 50px;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation: rotate 0.5s 1;
+          animation: rotate 0.5s 1;
 }
 
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
 .above, .below {
   transition: all, 0.5s;
 }
@@ -89,6 +111,11 @@ span.hamburger {
 
 .rotate_720 {
   transform: rotate(-720deg);
+  transition: all, 0.5s, ease;
+  -webkit-animation: rotate 2s infinite;
+          animation: rotate 2s infinite;
+  -webkit-animation: forwards;
+          animation: forwards;
 }
 
 @-webkit-keyframes simply {
@@ -125,6 +152,8 @@ span.hamburger {
   transition: all, 0.5s;
   transform: translateX(100vw);
   opacity: 0;
+  -webkit-animation: simply;
+          animation: simply;
 }
 
 @keyframes simply {
