@@ -157,14 +157,48 @@ for (let i = 0; i <4; i++){
     
     
     const check =   selector(a_content)  ;
-    // console.log(check);
-    // console.log(a_content);
+    ///console.log(check);
+     console.log(a_content);
 
-   
+    // const  lambda = 0 ; 
+
+    // switch (lambda) {
+    //     case (lambda == 0):
+    
+    //         document.getElementsByClassName("a_content").style.color = "red" ;
+    //         lambda +=1;
+    
+            
+    //         break;
+    
+    //     default:
+    //         document.getElementsByClassName("a_content").style.color = 'white' ;
+    //         break;
+    // }
+    
+    
 
     
 
 }
 
 
+// var str,
+// element = document.getElementsByClassName('check');
+// if (element != null) {
+//     str = element.length;
+    
+// }
+// else {
+//     str = null;
+   
+// }
 
+
+// console.log(str);
+    
+
+
+const yup =   document.getElementsByClassName('.menu-link').innerHtml;
+
+console.log(yup);
