@@ -99,6 +99,8 @@ li{
     margin: auto;
     font-size: 1.1rem;
     text-shadow: 3px 3px 3px black;
+    @include transition-mixin;
+    
 }
 
 li.menu-list-item1{

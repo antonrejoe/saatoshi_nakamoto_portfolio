@@ -23,6 +23,148 @@ a.link-items1 {
   padding: 0;
 }
 
+.hide {
+  visibility: hidden;
+  transition: all, 0.5;
+}
+
+.rot_up {
+  transform: rotate(45deg) translateY(10px) translateX(15px);
+  transition: all, 0.5s;
+  width: 30px;
+  height: 0.01em;
+  overflow: visible;
+  z-index: 2;
+  border: 0px;
+  padding: 0.09em;
+}
+
+.rot_down {
+  transform: rotate(-45deg) translateY(0) translateX(2px);
+  transition: all, 0.5s;
+  width: 30px;
+  overflow: visible;
+  z-index: 2;
+  height: 0.01em;
+  border: 0px;
+  padding: 0.09em;
+}
+
+.hamburger-rot {
+  height: 50px;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation: rotate 0.5s 1;
+          animation: rotate 0.5s 1;
+}
+
+.hamburger-rot-anti {
+  -webkit-animation: rotate_anti;
+          animation: rotate_anti;
+}
+
+@-webkit-keyframes rotate_anti {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-720deg);
+  }
+}
+
+@keyframes rotate_anti {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-720deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+.above, .below {
+  transition: all, 0.5s;
+}
+.above .mid, .below .mid {
+  visibility: hidden;
+}
+
+.mid {
+  transition: all, 0;
+}
+
+@-webkit-keyframes simply {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes simply {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+#link_1, #link_2, #link_3, #link_4 {
+  transform: translateX(-100vw);
+  visibility: visible;
+  transition: all, 0.5s;
+  -webkit-animation: anim_bar_content;
+          animation: anim_bar_content;
+}
+
+@-webkit-keyframes anim_bar_content {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translate(0vw);
+  }
+}
+
+@keyframes anim_bar_content {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translate(0vw);
+  }
+}
+.animate_bar_content {
+  -webkit-animation: anim_bar_content;
+          animation: anim_bar_content;
+  transition: all, 0.5s;
+}
+
+.menu-link {
+  transition: all, 0.5s;
+  transform: translateX(0);
+  -webkit-animation: anim_bar_content 2s;
+          animation: anim_bar_content 2s;
+  animation: anim_bar_content 2s;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
 span.hamburger {
   content: "";
   border-radius: 1rem;
@@ -81,15 +223,19 @@ span.hamburger {
           animation: rotate 0.5s 1;
 }
 
-@-webkit-keyframes rotate {
+.hamburger-rot-anti {
+  -webkit-animation: rotate_anti;
+          animation: rotate_anti;
+}
+
+@keyframes rotate_anti {
   0% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(720deg);
+    transform: rotate(-720deg);
   }
 }
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -109,24 +255,6 @@ span.hamburger {
   transition: all, 0;
 }
 
-.rotate_720 {
-  transform: rotate(-720deg);
-  transition: all, 0.5s, ease;
-  -webkit-animation: rotate 2s infinite;
-          animation: rotate 2s infinite;
-  -webkit-animation: forwards;
-          animation: forwards;
-}
-
-@-webkit-keyframes simply {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
 @keyframes simply {
   0% {
     width: 0%;
@@ -135,6 +263,38 @@ span.hamburger {
     width: 100%;
   }
 }
+#link_1, #link_2, #link_3, #link_4 {
+  transform: translateX(-100vw);
+  visibility: visible;
+  transition: all, 0.5s;
+  -webkit-animation: anim_bar_content;
+          animation: anim_bar_content;
+}
+
+@keyframes anim_bar_content {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translate(0vw);
+  }
+}
+.animate_bar_content {
+  -webkit-animation: anim_bar_content;
+          animation: anim_bar_content;
+  transition: all, 0.5s;
+}
+
+.menu-link {
+  transition: all, 0.5s;
+  transform: translateX(0);
+  -webkit-animation: anim_bar_content 2s;
+          animation: anim_bar_content 2s;
+  animation: anim_bar_content 2s;
+  -webkit-animation-direction: forwards;
+          animation-direction: forwards;
+}
+
 .menu-list-item1, .translate-anim-2, .translate-anim-1 {
   height: 100vh;
   background-color: rgb(59, 59, 59);
@@ -289,6 +449,7 @@ li {
   margin: auto;
   font-size: 1.1rem;
   text-shadow: 3px 3px 3px black;
+  transition: all, 0.5s;
 }
 
 li.menu-list-item1, li.translate-anim-1, li.translate-anim-2 {

@@ -3,6 +3,7 @@
 //  
 //  tryn' to deal with the menubar
 
+@import './animate';
 
 span.hamburger{
     content: '';
@@ -32,7 +33,6 @@ span.hamburger{
     top: 2%;
     box-shadow: black 2px 2px 01  ;
 
-    
     
     
 }

@@ -47,6 +47,25 @@
     
 }
     
+.hamburger-rot-anti{
+    animation: rotate_anti;
+}
+
+@keyframes rotate_anti {
+    
+        0%{
+            transform: rotate(0deg);
+        }
+    
+        
+    
+        100%{
+            transform : rotate(-720deg);
+        }
+    
+    
+    
+}
 
 @keyframes rotate{
     0%{
@@ -74,14 +93,7 @@
 }
 
 
-.rotate_720{
-    
-    transform: rotate(-720deg);
-    @include transition_🥪;
-    animation: rotate 2s infinite;
-    animation:forwards;
-    
-}
+
 
 @keyframes  simply{
 
@@ -95,3 +107,59 @@
         width: 100%;
     }
 }
+
+
+#link_1 , #link_2 , #link_3 , #link_4{
+   
+    transform: translateX(-100vw);
+    visibility: visible;
+    @include transition-mixin;
+    animation:anim_bar_content ;
+
+}
+
+
+@keyframes anim_bar_content {
+
+    0%{
+        transform: translateX(100vw);
+
+    }
+
+    100%{
+        
+        transform: translate(0vw);
+    }
+    
+}
+
+
+.animate_bar_content{
+    animation: anim_bar_content;
+    @include transition-mixin;
+}
+
+
+$x : 0;
+
+.menu-link{
+    @include transition-mixin;
+    
+    @if ($x == 0) {
+        transform: translateX($x);
+        animation: anim_bar_content 2s;
+         
+    }
+    @else{
+        transform: translateX(100vw);
+        animation: anim_bar_content 2s;
+        $x : 0;
+    }
+
+
+    animation: anim_bar_content 2s ;
+    animation-direction: forwards;
+}
+
+
+
