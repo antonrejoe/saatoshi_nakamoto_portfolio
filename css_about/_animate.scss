@@ -1,0 +1,96 @@
+
+
+
+@keyframes zoom_out {
+
+    from{
+        
+       background-color: none;
+        
+    }
+
+    to{
+
+        background-color: rgb(165, 165, 165 , 0.1);
+        box-shadow: rgb(110, 110, 110) 0.5rem 0.5rem 2rem ;
+        
+        
+
+    }
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    display: inline-block;
+    
+    
+    margin: auto;
+    margin-top: 2%;
+}
+
+
+
+
+
+
+
+
+.hamburger-top-rot{
+    
+    
+
+    animation: rotation-clock 1s ease;
+    @include transition;
+
+}
+
+.hamburger-bottom-rot{
+
+    
+    animation: rotation-anti-clock 1s ease;
+    @include transition;
+}
+
+
+@keyframes rotation-clock {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(45deg) translateX(15px) translateY(12px);
+        z-index: 10;
+    }
+
+}
+
+
+@keyframes rotation-anti-clock {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(-45deg);
+        z-index: 10;
+    }
+
+}
+
+@keyframes fade-out {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+
+}
+
+
+
+
