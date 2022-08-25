@@ -42,101 +42,6 @@ div.hamburger-div {
   z-index: 15;
 }
 
-body {
-  background: linear-gradient(to right top, rgba(43, 168, 253, 0.5), rgba(255, 255, 255, 0.5));
-}
-
-::-moz-selection {
-  background-color: #2BA8FD;
-  color: black;
-}
-
-::selection {
-  background-color: #2BA8FD;
-  color: black;
-}
-
-* {
-  padding: 0%;
-  margin: 0%;
-  line-height: 200%;
-  font-family: "Roboto Slab", serif;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.section-1 {
-  margin: 0 5%;
-  height: 90vh;
-  text-align: center;
-  background-size: cover;
-}
-.section-1 h1.section-1-heading {
-  font-size: 300%;
-}
-.section-1 div.section-header {
-  padding: 10% 10%;
-  padding-top: 15%;
-}
-.section-1 h3.section-1-sub-heading {
-  margin-top: 2%;
-}
-.section-1 h1.section-1-heading, .section-1 h3.section-1-sub-heading {
-  padding-bottom: 2%;
-  display: block;
-}
-
-h6 {
-  display: inline-block;
-  border-radius: 2rem;
-}
-
-section.section-2 {
-  display: flex;
-  margin: 0 5%;
-  height: 90vh;
-  justify-content: center;
-  background: linear-gradient(to right top, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.1));
-  border-radius: 2rem;
-  box-shadow: rgb(110, 110, 110) 0.5rem 0.5rem 2rem;
-  -webkit-backdrop-filter: blur(3rem);
-          backdrop-filter: blur(3rem);
-}
-
-.content {
-  font-size: 1.7rem;
-  width: 50%;
-}
-
-.content.section-2-content {
-  margin: auto 2%;
-}
-
-section.section-3 {
-  display: flex;
-  margin: 10.5% 5%;
-  height: 90vh;
-  flex-direction: row;
-  background: linear-gradient(to right top, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.1));
-  border-radius: 2rem;
-  box-shadow: rgb(110, 110, 110) 0.5rem 0.5rem 2rem;
-  -webkit-backdrop-filter: blur(3rem);
-          backdrop-filter: blur(3rem);
-}
-
-.content.content.section-3-content {
-  margin: auto 2%;
-}
-
-img {
-  margin: auto auto;
-  width: 80%;
-  height: 80%;
-}
-
 @-webkit-keyframes zoom_out {
   from {
     background-color: none;
@@ -224,81 +129,168 @@ a {
 }
 @-webkit-keyframes fade-out {
   from {
-    opacity: 0;
+    opacity: 1;
   }
   to {
-    opacity: 1;
+    opacity: 0;
   }
 }
 @keyframes fade-out {
   from {
-    opacity: 0;
-  }
-  to {
     opacity: 1;
   }
+  to {
+    opacity: 0;
+  }
 }
+.rotate-720 {
+  -webkit-animation: fade-out 1;
+          animation: fade-out 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 @media (max-width: 900px) {
-  .section-nav .section-nav-nav {
-    height: 100vh;
-  }
-  div.hamburger {
-    visibility: visible;
-  }
-  section.section-nav {
-    visibility: hidden;
-    z-index: 1;
-  }
-  li.menu-link {
-    flex-direction: column;
-  }
-  a {
-    margin: auto;
-    padding: 6%;
-  }
-  section.section-1 {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 5%;
-  }
-  section.section-2 {
-    flex-direction: column;
-    -moz-column-gap: 5%;
-         column-gap: 5%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  section.section-2 h6 {
-    padding: 5%;
-  }
   img {
-    padding: 5%;
+    width: 20%;
+    height: 20%;
   }
-  section.section-3 {
+  div.section-2 {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  div.section-3 {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  div {
     flex-direction: column;
-    -moz-column-gap: 5%;
-         column-gap: 5%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
-  section.section-3 h6 {
-    padding: 5%;
-  }
-  .content {
+  h6.content {
+    height: 90%;
     width: 100%;
+    font-size: 1.2rem;
+    padding: 2% 2%;
   }
 }
-.hamburger-mid-rot {
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
-  visibility: hidden;
+body {
+  background: linear-gradient(to right bottom, rgba(43, 168, 253, 0.4), rgba(255, 255, 255, 0.5));
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+}
+
+::-moz-selection {
+  background-color: #2BA8FD;
+  color: black;
+}
+
+::selection {
+  background-color: #2BA8FD;
+  color: black;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  line-height: 200%;
+  font-family: "Roboto Slab", serif;
+  box-sizing: border-box;
+}
+
+img {
+  width: auto;
+  height: auto;
+  padding: 5%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-1 {
+  margin: 0 5%;
+  height: 70vh;
+  text-align: center;
+  background-size: cover;
+}
+.section-1 h1.section-1-heading {
+  font-size: 300%;
+}
+.section-1 div.section-header {
+  padding: 10% 10%;
+  padding-top: 15%;
+}
+.section-1 h3.section-1-sub-heading {
+  margin-top: 2%;
+}
+.section-1 h1.section-1-heading, .section-1 h3.section-1-sub-heading {
+  padding-bottom: 2%;
+  display: block;
+}
+
+h6 {
+  display: inline-block;
+  border-radius: 2rem;
+}
+
+div.section-2 {
+  display: flex;
+  margin: 0 5%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  justify-content: center;
+  background: linear-gradient(to right bottom, rgba(181, 181, 181, 0.2), rgba(255, 255, 255, 0.9));
+  border-radius: 2rem;
+  box-shadow: rgb(110, 110, 110) 0.5rem 0.5rem 2rem;
+  -webkit-backdrop-filter: blur(3rem);
+          backdrop-filter: blur(3rem);
+}
+
+.content {
+  font-size: 1.7rem;
+  width: 50%;
+}
+
+.content.section-2-content {
+  margin: auto 2%;
+}
+
+div.section-3 {
+  display: flex;
+  margin: 10.5% 5%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background: linear-gradient(to right bottom, rgba(181, 181, 181, 0.2), rgba(255, 255, 255, 0.9));
+  border-radius: 2rem;
+  box-shadow: rgb(110, 110, 110) 0.5rem 0.5rem 2rem;
+  -webkit-backdrop-filter: blur(3rem);
+          backdrop-filter: blur(3rem);
+}
+
+.content.section-3-content {
+  margin: auto 2%;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+}
+
+section.section-1 {
+  text-align: center;
+}
+
+div.section-header {
+  text-align: center;
+  margin: auto auto;
 }/*# sourceMappingURL=main.css.map */

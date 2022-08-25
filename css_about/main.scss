@@ -16,15 +16,16 @@ $primary-color : #2BA8FD;
 body{
     background:linear-gradient(
 
-    to right top,
+    to right bottom,
 
-    rgba(43, 168, 253, 0.5),
+    rgba(43, 168, 253, 0.4),
     rgba(255, 255, 255, 0.5)
 
 
     
 
     ) ;
+    backdrop-filter: blur(1rem);
     
 }
 
@@ -42,16 +43,21 @@ body{
 
 
 }
-
-
+img{
+   width: auto;
+   height: auto;
+   padding: 5%;
+}
 html{
     scroll-behavior: smooth;
 }
 
 
+
 .section-1{
     margin: 0 5%;
-    height: 90vh;
+    height: 70vh;
+    
     text-align: center;
     background-size: cover;
     
@@ -90,18 +96,19 @@ h6{
     
 }
 
-section.section-2{
+div.section-2{
     display: flex;
     margin: 0 5%;
-    height: 90vh;
+    height: max-content;
     justify-content: center;
     
     background: linear-gradient(
     
-        to right top ,
+        to right bottom ,
     
-        rgba(255, 255, 255, 0.9),
-        rgba(0, 0, 0, 0.1)
+        
+        rgba(181, 181, 181, 0.2),
+        rgba(255, 255, 255, 0.9)
     
         );
     border-radius: 2rem;
@@ -121,18 +128,17 @@ section.section-2{
 }
 
 
-section.section-3{
+div.section-3{
     display: flex;
     margin: 10.5% 5%;
-    height: 90vh;
-    flex-direction: row;
+    height: max-content;
+    
     background: linear-gradient(
     
-        to right top ,
+        to right bottom ,
     
-        rgba(255, 255, 255, 0.9),
-        rgba(0, 0, 0, 0.1)
-    
+        rgba(181, 181, 181, 0.2),
+        rgba(255, 255, 255, 0.9)
         );
     border-radius: 2rem;
     box-shadow: rgb(110, 110, 110) 0.5rem 0.5rem 2rem; 
@@ -142,12 +148,12 @@ section.section-3{
 
 
 
-.content.content.section-3-content{
+.content.section-3-content{
     margin: auto 2%;
 }
 
 img{
-    margin: auto auto;
+    
     width: 80%;
     height: 80%;
 }
@@ -155,3 +161,14 @@ img{
 
 
 
+section.section-1{
+    text-align: center;
+    
+}
+
+div.section-header{
+    text-align: center;
+    margin: auto auto;
+    
+    
+}

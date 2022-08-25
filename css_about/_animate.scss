@@ -1,6 +1,10 @@
 
 
-
+@mixin transition {
+    transition: all ease 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
 @keyframes zoom_out {
 
     from{
@@ -82,11 +86,11 @@ a{
 
 @keyframes fade-out {
     from{
-        opacity: 0;
+        opacity: 1;
     }
 
     to{
-        opacity: 1;
+        opacity: 0;
     }
 
 }
@@ -94,3 +98,7 @@ a{
 
 
 
+.rotate-720{
+    animation: fade-out 1 ;
+    animation-fill-mode: forwards;
+}
