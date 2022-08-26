@@ -95,10 +95,21 @@ a{
 
 }
 
+@keyframes rotate-720 {
+    from{
+        transform: rotate(0deg);
+
+    }
+
+    to{
+       transform: rotate(720deg);
+    }
+
+}
 
 
 
 .rotate-720{
-    animation: fade-out 1 ;
+    animation: rotate-720 1.2s 1 ;
     animation-fill-mode: forwards;
 }

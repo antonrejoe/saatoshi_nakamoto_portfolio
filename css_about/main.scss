@@ -2,6 +2,7 @@
 @import './animate';
 @import './responsive';
 
+
 @mixin transition {
     transition: all ease 1s;
     animation-delay: 0s;
@@ -13,7 +14,11 @@
 
 $primary-color : #2BA8FD;
 
+
+
 body{
+    padding: 0%;
+    margin: 0%;
     background:linear-gradient(
 
     to right bottom,
@@ -29,11 +34,17 @@ body{
     
 }
 
+
+
+
 ::selection{
 
     background-color: #2BA8FD;
     color: black;
 }
+
+
+
 *{
     padding: 0%;
     margin: 0%;
@@ -43,19 +54,27 @@ body{
 
 
 }
+
+
 img{
    width: auto;
    height: auto;
    padding: 5%;
 }
-html{
+
+
+html, body{
     scroll-behavior: smooth;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
 }
 
 
 
+
 .section-1{
-    margin: 0 5%;
+    margin: 0 4%;
     height: 70vh;
     
     text-align: center;
@@ -98,7 +117,7 @@ h6{
 
 div.section-2{
     display: flex;
-    margin: 0 5%;
+    margin: 0 4%;
     height: max-content;
     justify-content: center;
     
@@ -130,7 +149,10 @@ div.section-2{
 
 div.section-3{
     display: flex;
-    margin: 10.5% 5%;
+    
+    
+    margin: 10.5% 4%;
+    margin-bottom: 0%;
     height: max-content;
     
     background: linear-gradient(
@@ -148,9 +170,12 @@ div.section-3{
 
 
 
-.content.section-3-content{
+.content.section-3-content
+{
     margin: auto 2%;
 }
+
+
 
 img{
     

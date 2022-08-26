@@ -5,6 +5,7 @@
 
 
 @media (max-width : 900px)
+
 {
 
         img{
@@ -13,7 +14,7 @@
         }
 
 
-    
+        
 
    
     div.section-2{
@@ -43,4 +44,72 @@
        padding: 2% 2%;
        
     }
+
+
+
+    .section-nav-nav  {
+
+        height: 100vh;
+        position: fixed;
+        z-index: 7;
+        backdrop-filter: blur(3rem);
+        
+
+        
+    }
+    section.section-nav{
+        height: 100vh;
+        position: fixed;
+        text-align: center;
+        visibility: hidden;
+        
+        
+        
+    }
+    
+     div.menu-link{
+        
+        
+        margin: auto;
+        display: flex;
+         column-gap: 5%;
+        flex-direction: column;
+        text-align: center;
+        height: 90vh;
+        width: fit-content;
+        margin: auto;
+        
+
+        
+        
+    }
+
+    a{
+        display: inline-block;
+        margin: auto;
+        font-size: 2rem;
+        width: 100vw; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;       
+        
+    }
+
+    div.hamburger-div{
+        visibility: visible;
+    }
+
+    
+
+ 
+  
+}
+
+
+
+
+.hide-{
+    visibility: hidden;
+}
+
+.show-{
+    visibility: show;
 }

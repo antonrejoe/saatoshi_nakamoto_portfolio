@@ -1,11 +1,13 @@
 
 
-li.menu-link{
+div.menu-link{
     display: flex;
     
 }
 
 .section-nav-nav{
+    position: fixed;
+    width: 100vw;
     height: 12vh;
     background: linear-gradient(
     
@@ -16,6 +18,7 @@ li.menu-link{
     
         );
     box-shadow: #7b7b7b 0.5px 0.5px 3px;
+    backdrop-filter: blur(3rem);
 }
 .section-nav{
     position: fixed;
@@ -28,7 +31,7 @@ li.menu-link{
 
     
         );
-        backdrop-filter: blur(2rem);
+        backdrop-filter: blur(3rem);
 }
 
 section.section-hamburger{
@@ -44,7 +47,7 @@ div.hamburger{
     padding: 3px;
     background-color: #2BA8FD;
     border-radius: 1rem;
-    visibility: hidden;
+    
     
     z-index: 10;
 }
@@ -56,7 +59,7 @@ div.hamburger-div{
     row-gap: 4px;
     left: 85vw;
     top: 5vh;
-    
+    visibility: hidden;
     z-index: 15;
     
 }
