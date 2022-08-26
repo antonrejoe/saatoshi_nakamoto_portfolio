@@ -322,6 +322,12 @@ a {
   transform: rotate(-45deg);
 }
 
+@media (min-width: 901px) {
+  section.section-1 {
+    color: #000;
+    opacity: 1;
+  }
+}
 @media (max-width: 900px) {
   img {
     width: 20%;
