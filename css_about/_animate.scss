@@ -113,3 +113,52 @@ a{
     animation: rotate-720 1.2s 1 ;
     animation-fill-mode: forwards;
 }
+
+
+
+@keyframes translate-down {
+
+    from{
+        transform: translateY(-100vh);
+
+
+    }
+    
+
+    to{
+        transform: translateY(0vh);
+    }
+}
+
+
+
+@keyframes translate-up {
+
+    0%{
+        transform: translateY(0vh);
+    }
+    
+
+    100%{
+        transform: translateY(-100vh);
+    }
+
+    
+}
+
+
+
+.ham-top-rot{
+
+    transform: rotate(45deg);
+}
+
+
+.ham-mid-rot{
+    visibility: hidden;
+}
+
+
+.ham-bottom-rot{
+    transform: rotate(-45deg);
+}

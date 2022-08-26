@@ -1,5 +1,5 @@
 
-
+@import './animate';
 
 
 
@@ -30,9 +30,13 @@
 
     div{
         flex-direction: column;
-        height: fit-content;
+        
+        width: -moz-fit-content;
+        
         width: fit-content;
         
+        height: -moz-fit-content;
+        height: fit-content;
         
     }
 
@@ -53,6 +57,7 @@
         position: fixed;
         z-index: 7;
         backdrop-filter: blur(3rem);
+        -webkit-backdrop-filter: blur(3rem);
         
 
         
@@ -61,11 +66,14 @@
         height: 100vh;
         position: fixed;
         text-align: center;
-        visibility: hidden;
+        transform: translateY(-100vh);
         
-        
+        animation-fill-mode: forwards;
+      
         
     }
+
+    
     
      div.menu-link{
         
@@ -76,6 +84,7 @@
         flex-direction: column;
         text-align: center;
         height: 90vh;
+        width: -moz-fit-content;
         width: fit-content;
         margin: auto;
         
@@ -104,12 +113,27 @@
 }
 
 
+// I thought that for now too much animation through js is not that healthy coz' i wanna get my css designing part strong
+
+// .hide-{
+//     visibility: hidden;
+// }
+
+// .show-{
+//     visibility: visible;
+// }
 
 
-.hide-{
-    visibility: hidden;
+
+.translate-down{
+    animation: translate-down  1s ease;
+    
+    transform: translateY(0vh);
 }
 
-.show-{
-    visibility: show;
+
+
+.section-1-font-modify{
+    color:#2BA8FD ;
+    opacity: 0.5;
 }
