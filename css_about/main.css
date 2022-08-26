@@ -322,6 +322,11 @@ a {
   transform: rotate(-45deg);
 }
 
+@media (min-width: 901px) {
+  body {
+    color: black;
+  }
+}
 @media (max-width: 900px) {
   img {
     width: 20%;
