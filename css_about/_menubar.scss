@@ -19,6 +19,7 @@ div.menu-link{
         );
     box-shadow: #7b7b7b 0.5px 0.5px 3px;
     backdrop-filter: blur(3rem);
+    -webkit-backdrop-filter: blur(3rem);
 }
 .section-nav{
     position: fixed;
@@ -32,6 +33,7 @@ div.menu-link{
     
         );
         backdrop-filter: blur(3rem);
+       -webkit-backdrop-filter: blur(3rem);
 }
 
 section.section-hamburger{

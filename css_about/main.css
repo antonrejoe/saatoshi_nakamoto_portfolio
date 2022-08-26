@@ -8,8 +8,8 @@ div.menu-link {
   height: 12vh;
   background: linear-gradient(to right, rgba(45, 171, 255, 0.5), rgba(255, 255, 255, 0.3));
   box-shadow: #7b7b7b 0.5px 0.5px 3px;
+  backdrop-filter: blur(3rem);
   -webkit-backdrop-filter: blur(3rem);
-          backdrop-filter: blur(3rem);
 }
 
 .section-nav {
@@ -17,8 +17,8 @@ div.menu-link {
   width: 100vw;
   z-index: 5;
   background: linear-gradient(to right, rgba(43, 168, 253, 0.5));
+  backdrop-filter: blur(3rem);
   -webkit-backdrop-filter: blur(3rem);
-          backdrop-filter: blur(3rem);
 }
 
 section.section-hamburger {
@@ -170,6 +170,158 @@ a {
           animation-fill-mode: forwards;
 }
 
+@-webkit-keyframes translate-down {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0vh);
+  }
+}
+
+@keyframes translate-down {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0vh);
+  }
+}
+@-webkit-keyframes translate-up {
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+@keyframes translate-up {
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+.ham-top-rot {
+  transform: rotate(45deg);
+}
+
+.ham-mid-rot {
+  visibility: hidden;
+}
+
+.ham-bottom-rot {
+  transform: rotate(-45deg);
+}
+
+@keyframes zoom_out {
+  from {
+    background-color: none;
+  }
+  to {
+    background-color: rgba(165, 165, 165, 0.1);
+    box-shadow: rgb(110, 110, 110) 0.5rem 0.5rem 2rem;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.hamburger-top-rot {
+  -webkit-animation: rotation-clock 1s ease;
+          animation: rotation-clock 1s ease;
+  transition: all ease 1s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.hamburger-bottom-rot {
+  -webkit-animation: rotation-anti-clock 1s ease;
+          animation: rotation-anti-clock 1s ease;
+  transition: all ease 1s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@keyframes rotation-clock {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg) translateX(15px) translateY(12px);
+    z-index: 10;
+  }
+}
+@keyframes rotation-anti-clock {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-45deg);
+    z-index: 10;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes rotate-720 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+.rotate-720 {
+  -webkit-animation: rotate-720 1.2s 1;
+          animation: rotate-720 1.2s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@keyframes translate-down {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0vh);
+  }
+}
+@keyframes translate-up {
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+.ham-top-rot {
+  transform: rotate(45deg);
+}
+
+.ham-mid-rot {
+  visibility: hidden;
+}
+
+.ham-bottom-rot {
+  transform: rotate(-45deg);
+}
+
 @media (max-width: 900px) {
   img {
     width: 20%;
@@ -187,12 +339,12 @@ a {
   }
   div {
     flex-direction: column;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
+    width: -webkit-fit-content;
     width: fit-content;
+    height: -moz-fit-content;
+    height: -webkit-fit-content;
+    height: fit-content;
   }
   h6.content {
     height: 90%;
@@ -204,14 +356,16 @@ a {
     height: 100vh;
     position: fixed;
     z-index: 7;
+    backdrop-filter: blur(3rem);
     -webkit-backdrop-filter: blur(3rem);
-            backdrop-filter: blur(3rem);
   }
   section.section-nav {
     height: 100vh;
     position: fixed;
     text-align: center;
-    visibility: hidden;
+    transform: translateY(-100vh);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
   div.menu-link {
     margin: auto;
@@ -221,8 +375,8 @@ a {
     flex-direction: column;
     text-align: center;
     height: 90vh;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
+    width: -webkit-fit-content;
     width: fit-content;
     margin: auto;
   }
@@ -237,20 +391,23 @@ a {
     visibility: visible;
   }
 }
-.hide- {
-  visibility: hidden;
+.translate-down {
+  -webkit-animation: translate-down 1s ease;
+          animation: translate-down 1s ease;
+  transform: translateY(0vh);
 }
 
-.show- {
-  visibility: show;
+.section-1-font-modify {
+  color: #2BA8FD;
+  opacity: 0.5;
 }
 
 body {
   padding: 0%;
   margin: 0%;
   background: linear-gradient(to right bottom, rgba(43, 168, 253, 0.4), rgba(255, 255, 255, 0.5));
+  backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
-          backdrop-filter: blur(1rem);
 }
 
 ::-moz-selection {
@@ -321,7 +478,7 @@ div.section-2 {
   border-radius: 2rem;
   box-shadow: rgb(110, 110, 110) 0.5rem 0.5rem 2rem;
   -webkit-backdrop-filter: blur(3rem);
-          backdrop-filter: blur(3rem);
+  backdrop-filter: blur(3rem);
 }
 
 .content {
@@ -336,7 +493,7 @@ div.section-2 {
 div.section-3 {
   display: flex;
   margin: 10.5% 4%;
-  margin-bottom: 0%;
+  margin-bottom: 10.5%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -344,7 +501,7 @@ div.section-3 {
   border-radius: 2rem;
   box-shadow: rgb(110, 110, 110) 0.5rem 0.5rem 2rem;
   -webkit-backdrop-filter: blur(3rem);
-          backdrop-filter: blur(3rem);
+  backdrop-filter: blur(3rem);
 }
 
 .content.section-3-content {
