@@ -1,1 +1,23 @@
 
+@import './nav-section';
+@import './section-1';
+@import './section-2';
+@import './foot-sec';
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+html , body , main{
+
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    
+}
+
+

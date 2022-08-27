@@ -1,0 +1,41 @@
+
+
+
+.sec-2{
+    height: 1500px;
+}
+
+
+.sec-2-div-major{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(207, 207, 207);
+    height: 1500px;
+    
+    
+}
+
+
+
+div.sec-2-div-1 , div.sec-2-div-2{
+    content: '';
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    background-color: #000;
+    width: 90vw;
+    margin: auto;
+    
+
+
+    & div{
+        background-color: white;
+        content: '';
+        height: 10%;
+        width: 10%;
+        margin: auto;
+    }
+}   
+
+
+
