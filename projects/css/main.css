@@ -1,22 +1,73 @@
 a.nav-div-item {
-  display: inline-block;
+  display: flex;
   text-decoration: none;
   color: #000;
-  margin: auto;
+  margin: 0 auto;
+  height: 12vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2%;
+}
+
+a.nav-div-item:hover {
+  background-color: rgba(255, 255, 255, 0.692);
+  transition: all 1s ease;
+}
+
+.nav-div-items-container {
+  position: fixed;
 }
 
 div.nav-div-items-container {
+  position: fixed;
   width: 100vw;
   display: flex;
-  height: 10vh;
+  height: 12vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
+  padding: 0 20%;
+  background: linear-gradient(to right, rgba(87, 188, 255, 0.5), rgba(255, 255, 255, 0.881));
+  box-shadow: 2px 2px 2px rgba(149, 149, 149, 0.796);
 }
 
 .sec-1 {
-  height: 60vh;
-  background-color: rgb(184, 184, 184);
+  height: 70vh;
+}
+
+div.sec-1-div {
+  margin-top: 10%;
+}
+
+div.svg-code-div {
+  display: flex;
+}
+
+#svg-code-svg {
+  display: inline-block;
+  box-sizing: content-box;
+  padding: 5%;
+  padding-top: 15%;
+  padding-right: 0%;
+  margin-left: 10%;
+}
+
+.sec-1-div {
+  display: flex;
+}
+
+div.sec-1-header-div {
+  font-size: 5rem;
+  font-family: "Mukta", sans-serif;
+  margin: auto;
+  margin-left: 4%;
+}
+
+.svg-code-div {
+  padding-top: 5%;
+  padding-left: 8%;
 }
 
 .sec-2 {
@@ -26,7 +77,6 @@ div.nav-div-items-container {
 .sec-2-div-major {
   display: flex;
   flex-direction: column;
-  background-color: rgb(207, 207, 207);
   height: 1500px;
 }
 
@@ -51,6 +101,120 @@ div.sec-2-div-1 div, div.sec-2-div-2 div {
   height: 20vh;
 }
 
+div.svg-code-div {
+  position: relative;
+}
+
+@-webkit-keyframes rotate-45 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-4%);
+  }
+}
+
+@keyframes rotate-45 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-4%);
+  }
+}
+g #plant {
+  display: block;
+  transform: translateX(-4%);
+  -webkit-animation: rotate-45 5s alternate infinite;
+          animation: rotate-45 5s alternate infinite;
+}
+
+g #head-actual {
+  display: block;
+  transform: translateX(0.09cm) translateY(0.09cm);
+  -webkit-animation: girls-head 2s infinite alternate;
+          animation: girls-head 2s infinite alternate;
+  transition: all;
+}
+
+@-webkit-keyframes girls-head {
+  from {
+    transform: translateX(0cm) translateY(0cm);
+  }
+  to {
+    transform: translateX(0.09cm) translateY(0.09cm);
+  }
+}
+
+@keyframes girls-head {
+  from {
+    transform: translateX(0cm) translateY(0cm);
+  }
+  to {
+    transform: translateX(0.09cm) translateY(0.09cm);
+  }
+}
+g #list-left-1 {
+  transform: translateY(-10px);
+  opacity: 0;
+  -webkit-animation: list-items-anim 3s 2s infinite alternate;
+          animation: list-items-anim 3s 2s infinite alternate;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  transition: all;
+}
+
+@-webkit-keyframes list-items-anim {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes list-items-anim {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+g #list-right-1 {
+  transform: translateY(-20px);
+  opacity: 0;
+  -webkit-animation: list-items-anim 3s 2s infinite alternate;
+          animation: list-items-anim 3s 2s infinite alternate;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  transition: all;
+}
+
+g #list-right-2 {
+  transform: translateY(-20px);
+  opacity: 0;
+  -webkit-animation: list-items-anim 3s 2s infinite alternate;
+          animation: list-items-anim 3s 2s infinite alternate;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  transition: all;
+}
+
+g #list-right-3 {
+  transform: translateY(-20px);
+  opacity: 0;
+  -webkit-animation: list-items-anim 3s 2s infinite alternate;
+          animation: list-items-anim 3s 2s infinite alternate;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  transition: all;
+}
+
 * {
   padding: 0%;
   margin: 0%;
@@ -61,4 +225,7 @@ html, body, main {
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
+  background: linear-gradient(to right bottom, rgb(185, 225, 252), rgba(255, 255, 255, 0.797));
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
 }/*# sourceMappingURL=main.css.map */

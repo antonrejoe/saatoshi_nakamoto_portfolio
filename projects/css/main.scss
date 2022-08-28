@@ -3,7 +3,9 @@
 @import './section-1';
 @import './section-2';
 @import './foot-sec';
+@import './svg-cod';
 
+$primary-color : #2BA8FD;
 
 *{
     padding: 0%;
@@ -17,7 +19,24 @@ html , body , main{
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
-    
+    background: linear-gradient(
+
+        to right bottom,
+   
+        
+       
+   
+       rgb(185, 225, 252),
+       rgba(255, 255, 255, 0.797)
+   
+   
+       
+   
+   
+   
+       );
+
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+
 }
-
-

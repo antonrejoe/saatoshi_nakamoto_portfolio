@@ -1,0 +1,122 @@
+
+
+
+
+
+div.svg-code-div{
+    position: relative;
+    
+}
+
+
+
+// the plant
+
+@keyframes rotate-45 {  // not rotating actually lol
+
+    0%{
+        transform: translateX(0%);
+ 
+    }
+    
+    100%{
+        transform: translateX(-4%);
+    }
+}
+
+
+
+g #plant{
+
+    display: block;
+    transform: translateX(-4%);
+    animation: rotate-45 5s alternate infinite;
+ 
+ 
+
+    
+}
+
+
+// the girl's head
+
+
+g #head-actual {
+    display: block;
+    transform: translateX(0.09cm) translateY(0.09cm);
+    animation: girls-head 2s  infinite  alternate;
+    transition: all;
+    
+
+}
+
+@keyframes girls-head {
+    from{
+        transform: translateX(0cm) translateY(0cm);
+    }
+    
+
+    to{
+        transform: translateX(0.09cm) translateY(0.09cm);
+
+    }
+}
+
+
+
+// animation for the list items
+
+g #list-left-1 {
+
+    transform: translateY(-10px);
+    opacity: 0;
+    animation: list-items-anim  3s 2s infinite alternate ;
+    animation-delay: 5s;
+    transition: all;
+
+}
+
+
+@keyframes list-items-anim
+ {
+    0%{
+        transform: translateY(-20px);
+        opacity: 0;
+    }  
+    
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+// right side
+
+g #list-right-1  {
+
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: list-items-anim  3s 2s infinite alternate;
+    animation-delay: 4s;
+    transition: all;
+
+}
+
+
+g #list-right-2 {
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: list-items-anim  3s 2s infinite alternate;
+    animation-delay: 3s;
+    transition: all;
+
+}
+
+g #list-right-3 {
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: list-items-anim  3s 2s infinite alternate;
+    animation-delay: 2s;
+    transition: all;
+}
