@@ -1,0 +1,86 @@
+
+
+@import './animate';
+
+
+div.hamburger-div{
+    display: none;
+}
+
+
+@media (max-width:900px) {
+
+
+    div.hamburger-div{
+        display: flex;
+        position: absolute;
+        align-items: flex-end;
+        width: fit-content;
+        height: fit-content;
+        width: -moz-fit-content;
+        height: -moz-fit-height;
+        z-index: 100;
+    
+    & svg {
+
+        position: relative;
+        margin-left: 85vw;
+        margin-top: 5vh;
+        
+    }
+    
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+// .ham-rot{
+
+
+    
+
+// }
+
+
+
+.line-1-rot{
+    transform: rotate(45deg) translateY(-12px) translateX(7px)  ;
+    animation: hamburger-line-1-rot 1.1s  0.1s  both;
+    @include transition-ease;
+}
+
+.line-2-hide{
+    visibility: hidden;
+    animation: hamburger-line-2-hide 0.01s  both;
+    @include transition-ease;
+}
+
+.line-3-rot{
+    transform: rotate(-45deg) translateY(0px) translateX(-20px);
+    animation: hamburger-line-3-rot 1.1s  0s  both;
+    @include transition-ease;
+    
+}
+
+.ham-rot-720{
+    transform: rotate(720deg);
+    animation: rot-720 1.1s  0s  both;
+    @include transition-ease;
+}
+
+
+
+// .ham-border{
+//     border: 2px 2px 2px black;
+//     animation: come-on-border 1.1s  0s  both;
+//     @include transition-ease;
+// }

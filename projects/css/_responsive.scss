@@ -1,0 +1,67 @@
+
+
+
+@import './animate';
+
+
+
+
+@media (max-width:900px) {
+
+
+    div.nav-sec-div{
+        display: block;
+        
+       
+
+      
+        div.nav-div-items-container{
+            transform: translateY(-100vh);
+            height: 100vh;
+            flex-direction: column;
+            font-size: 2rem;
+            opacity: 0.8 ;
+            
+            
+            background: linear-gradient(    
+
+            to right bottom,
+
+            rgba(255, 255, 255, 0.966),
+            rgba(73, 179, 255, 0.697)
+
+            );
+            backdrop-filter: blur(2rem);
+            -webkit-backdrop-filter: blur(2rem);
+        
+           
+        }
+    }
+
+
+
+    div.sec-2-div-1 , div.sec-2-div-2 {
+        
+        flex-direction: column;
+        height: 100vh;
+        padding: auto 0;
+        
+
+        & div{
+
+            display: inline-block;
+            height: 40%;
+            margin: auto auto;
+            width: 50vw;
+            padding: 2%;
+        }
+    }
+    
+}
+
+
+.slide-down-navbar{
+    transform: translateY(0vh);
+    animation: slide-down 1.1s   1  forwards;
+    @include transition-ease;
+}

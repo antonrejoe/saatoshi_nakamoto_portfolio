@@ -2,7 +2,7 @@
 
 .sec-1{
 
-    height: 70vh;
+    height: 50vh;
     
      
 
@@ -17,38 +17,39 @@ div.sec-1-div{
 }
 div.svg-code-div{
     display: flex;
+   
     
 }
 
 
 
-#svg-code-svg{
-    display: inline-block;
-    box-sizing: content-box;
-    padding: 5%;
-    padding-top: 15%;
-    padding-right: 0%;
-    margin-left: 10%;
 
-    
-}
 
 .sec-1-div{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
+
 div.sec-1-header-div{
-    font-size: 5rem;
+    font-size: 4.8rem;
     font-family: 'Mukta', sans-serif;
-    margin: auto;
-    margin-left: 4%;
+   
+    margin: auto auto;
+    display: inline-block;
+    // margin-left: 10%;
+    // margin-right: 0%;
+    
+    
     
 
 }
 
 .svg-code-div{
     padding-top: 5%;
-    padding-left: 8%;
+    
 }
 
 

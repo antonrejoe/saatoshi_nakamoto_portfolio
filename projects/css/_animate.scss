@@ -1,0 +1,88 @@
+
+
+// section hamburger
+
+@mixin transition-ease {
+    transition: all 1s ease-in-out;
+    
+}
+
+
+
+
+@keyframes hamburger-line-1-rot {
+
+    0%{
+        transform: none;
+    }
+    
+    100%{
+        transform: rotate(45deg) translateY(-12px) translateX(7px)  ;
+    }
+}
+
+
+@keyframes hamburger-line-3-rot {
+
+    0%{
+        transform: none;
+    }
+
+    100%{
+        transform: rotate(-45deg) translateY(0px) translateX(-20px);
+    }
+    
+}
+
+
+
+@keyframes hamburger-line-2-hide {
+
+    0%{
+        visibility: visible;
+    }
+
+    100%{
+        visibility: hidden;
+    }
+    
+}
+
+
+@keyframes slide-down {
+
+    0%{
+        transform: translateY(-100vh);
+    }
+
+    100%{
+        transform: translateY(0vh);
+    }
+    
+}
+
+
+@keyframes rot-720 {
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(720deg);
+    }
+    
+}
+
+
+// @keyframes come-on-border {
+
+//     0%{
+//         border: 0;
+//     }
+
+//     100%{
+//         border: 2px 2px 2px black;
+//     }
+    
+// }

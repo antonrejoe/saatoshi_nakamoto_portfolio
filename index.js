@@ -97,7 +97,7 @@ function show_navbar()
 {
 
     if($nav_bar_closed === 'hidden' ){
-        document.querySelector( 'li.menu-list-item1.active' ).style.visibility = $nav_bar_open;
+        document.querySelector(  'li.menu-list-item1.active' ).style.visibility = $nav_bar_open;
         document.querySelector( 'li.menu-list-item1.active' ).style.opacity = '0.95';
         document.querySelector( 'li.menu-list-item1.active' ).style.transform ='translateX(0vw)' ;
 

@@ -4,6 +4,13 @@
 @import './section-2';
 @import './foot-sec';
 @import './svg-cod';
+@import './projects-svg';
+@import './responsive';
+@import './hamburger';
+@import './animate';
+
+
+
 
 $primary-color : #2BA8FD;
 
@@ -24,10 +31,11 @@ html , body , main{
         to right bottom,
    
         
+        
        
    
-       rgb(185, 225, 252),
-       rgba(255, 255, 255, 0.797)
+       rgba(43, 168, 252, 0.112),
+       rgba(255, 255, 255, 0.5)
    
    
        
