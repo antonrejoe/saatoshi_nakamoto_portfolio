@@ -1,4 +1,6 @@
 
+@import './animate';
+
 
 
 .sec-2{
@@ -8,6 +10,7 @@
 
 .sec-2-div-major{
     display: flex;
+    overflow: visible;
     flex-direction: column;
     
     height: 1500px;
@@ -22,21 +25,30 @@ div.sec-2-div-1 , div.sec-2-div-2{
     display: flex;
     flex-direction: row;
     height: 80vh;
-   
+    overflow: visible;
     width: 100vw;
     margin: auto;
+    @include transition-ease;
     
-
+    div:hover{
+        opacity: 0.9;
+        @include transition-ease;
+        
+    }
 
     & div{
-        background: linear-gradient(
+        
+        // background: linear-gradient(
 
-        to right bottom,
+        // to right bottom,
 
-        rgba(255, 255, 255, 0.966),
-        rgba(163, 163, 163, 0.608)
+        // rgba(255, 255, 255, 0.966),
+        // rgba(163, 163, 163, 0.608)
 
-        );
+        // );
+        display: flex;
+        
+        justify-content: end;
         backdrop-filter: blur(2rem);
         -webkit-backdrop-filter: blur(2rem);
         box-shadow: 5px 5px 3px rgba(128, 128, 128, 0.859);
@@ -44,11 +56,214 @@ div.sec-2-div-1 , div.sec-2-div-2{
         height: 80%;
         width: 30%;
         margin: auto;
-        padding: 0 2%;
-        box-sizing: content-box;
+        
+       
+        display: inline-block;
+        
         border-radius: 2rem;
+        
+        
+        &:nth-last-child(2){
+            align-items: flex-start;
+            color: gray;
+            
+            
+        }
+
+        
+        
+        
     }
 }   
 
 
 
+div.sec-2-div-1-part-1{
+    background-image: url('crypto-currency-3130381_640.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+div.sec-2-div-1-part-2{
+
+    background-image: url('blockchain-img.png');
+    background-size: cover;
+    background-position: center;
+}
+div.sec-2-div-2-part-1{
+
+    background-image: url('poop.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    border: 2px 2px  solid black;
+    
+}
+div.sec-2-div-2-part-2{
+
+    background-image: url('poop.png');
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    border: 2px 2px  solid black;
+}
+
+
+
+
+
+
+
+
+div#description-Div-1{
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    height: 30%;
+    top: 70%;
+    transform: translateY(100%);
+    display: none;
+    opacity: 0;
+}
+
+div.sec-2-div-1-part-1:hover div#description-Div-1{
+    display: inline-block;
+    opacity: 1;
+    transform: translateY(0%);
+    animation: slide-up 0.8s   forwards;
+}
+div#description-Div-2{
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    height: 30%;
+    top: 70%;
+    transform: translateY(100%);
+    display: none;
+    opacity: 0;
+}
+
+div.sec-2-div-1-part-2:hover div#description-Div-2{
+    display: inline-block;
+    opacity: 1;
+    transform: translateY(0%);
+    animation: slide-up 0.8s   forwards;
+}
+div#description-Div-3{
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    height: 30%;
+    top: 70%;
+    transform: translateY(100%);
+    display: none;
+    opacity: 0;
+}
+
+div.sec-2-div-2-part-1:hover div#description-Div-3{
+    display: inline-block;
+    opacity: 1;
+    transform: translateY(0%);
+    animation: slide-up 0.8s   forwards;
+}
+div#description-Div-4{
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    height: 30%;
+    top: 70%;
+    transform: translateY(100%);
+    display: none;
+    opacity: 0;
+}
+
+div.sec-2-div-2-part-2:hover div#description-Div-4{
+    display: inline-block;
+    opacity: 1;
+    transform: translateY(0%);
+    animation: slide-up 0.8s   forwards;
+}
+
+// div#description-Div-2{
+//     display: inline-block;
+//     position: absolute;
+//     content: '';
+//     width: 100%;
+//     border-top-right-radius: 0;
+//     border-top-left-radius: 0;
+//     height: 30%;
+//     top: 70%;
+// }
+// div#description-Div-3{
+//     display: inline-block;
+//     position: absolute;
+//     content: '';
+//     width: 100%;
+//     border-top-right-radius: 0;
+//     border-top-left-radius: 0;
+//     height: 30%;
+//     top: 70%;
+// }
+// div#description-Div-4{
+//     display: inline-block;
+//     position: absolute;
+//     content: '';
+//     width: 100%;
+//     border-top-right-radius: 0;
+//     border-top-left-radius: 0;
+//     height: 30%;
+//     top: 70%;
+// }
+
+a.credit-a{
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+}
+
+
+#credit-2{
+    position: absolute;
+    height: fit-content;
+    display: inline-block;
+    left: 0%;
+    right: 0%;
+}
+
+
+// #credit-1{
+//     left: 10%;
+// }
+
+#credit-0{
+    font-size: 1rem;
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+    width: -moz-fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 1% auto ;
+}
