@@ -1,4 +1,6 @@
 a.nav-div-item {
+  font-size: 1.7rem;
+  font-family: "Open Sans", sans-serif;
   display: flex;
   text-decoration: none;
   color: #000;
@@ -53,7 +55,7 @@ div.svg-code-div {
 
 div.sec-1-header-div {
   font-size: 4.8rem;
-  font-family: "Mukta", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: auto auto;
   display: inline-block;
 }
@@ -251,6 +253,7 @@ div#description-Div-1 {
   transform: translateY(100%);
   display: none;
   opacity: 0;
+  text-align: center;
 }
 
 div.sec-2-div-1-part-1:hover div#description-Div-1 {
@@ -273,6 +276,7 @@ div#description-Div-2 {
   transform: translateY(100%);
   display: none;
   opacity: 0;
+  text-align: center;
 }
 
 div.sec-2-div-1-part-2:hover div#description-Div-2 {
@@ -295,6 +299,7 @@ div#description-Div-3 {
   transform: translateY(100%);
   display: none;
   opacity: 0;
+  text-align: center;
 }
 
 div.sec-2-div-2-part-1:hover div#description-Div-3 {
@@ -317,6 +322,7 @@ div#description-Div-4 {
   transform: translateY(100%);
   display: none;
   opacity: 0;
+  text-align: center;
 }
 
 div.sec-2-div-2-part-2:hover div#description-Div-4 {
@@ -365,6 +371,26 @@ a.credit-a {
   top: 0;
   bottom: 0;
   margin: 1% auto;
+}
+
+a.forward-to-poop {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  display: inline-block;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: fit-content;
+  width: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 4%;
 }
 
 .foot-sec {
@@ -540,12 +566,13 @@ g #list-right-3 {
 @media (max-width: 900px) {
   div.nav-sec-div {
     display: block;
+    text-shadow: 2px 2px 4px black;
   }
   div.nav-sec-div div.nav-div-items-container {
     transform: translateY(-100vh);
     height: 100vh;
     flex-direction: column;
-    font-size: 2rem;
+    font-size: 3rem;
     opacity: 0.8;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.966), rgba(73, 179, 255, 0.697));
     backdrop-filter: blur(2rem);

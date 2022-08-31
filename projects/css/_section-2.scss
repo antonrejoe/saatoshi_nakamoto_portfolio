@@ -130,6 +130,7 @@ div#description-Div-1{
     transform: translateY(100%);
     display: none;
     opacity: 0;
+    text-align: center;
 }
 
 div.sec-2-div-1-part-1:hover div#description-Div-1{
@@ -150,6 +151,7 @@ div#description-Div-2{
     transform: translateY(100%);
     display: none;
     opacity: 0;
+    text-align: center;
 }
 
 div.sec-2-div-1-part-2:hover div#description-Div-2{
@@ -170,6 +172,7 @@ div#description-Div-3{
     transform: translateY(100%);
     display: none;
     opacity: 0;
+    text-align: center;
 }
 
 div.sec-2-div-2-part-1:hover div#description-Div-3{
@@ -190,6 +193,7 @@ div#description-Div-4{
     transform: translateY(100%);
     display: none;
     opacity: 0;
+    text-align: center;
 }
 
 div.sec-2-div-2-part-2:hover div#description-Div-4{
@@ -266,4 +270,22 @@ a.credit-a{
     top: 0;
     bottom: 0;
     margin: 1% auto ;
+}
+
+
+a.forward-to-poop{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white; 
+    text-shadow: 2px 2px  2px black;
+    display: inline-block;
+    position: absolute;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 4%;
 }

@@ -1,0 +1,53 @@
+
+@import './nav-bar';
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+a{
+    
+    position: relative;
+    text-decoration: none;
+    color: gray;
+    display: inline-block;
+    margin: 0 auto;
+    
+}
+
+div.footer-div{
+    display: flex;
+    
+}
+
+div.fun-fact{
+    height: 100vh;
+    background-image: url('poop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    display: inline-block;
+    width: fit-content;
+    width: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: -40%;
+}
+
+
+
+
