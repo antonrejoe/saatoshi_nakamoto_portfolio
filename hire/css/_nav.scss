@@ -5,8 +5,9 @@ nav{
     height: 12vh;
     background-color: black;
     content: '';
-    display: flex;
+    display: -ms-flexbox;
 
+    z-index: 10;
 }
 
 div.logo-Div{
@@ -38,11 +39,12 @@ div.nav-item{
 }
 
 
-div.hire-btn-Div{
+button.hire-btn-Div{
     height: 8vh;
     width: 10vw;
     content: '';
     background-color: pink;
+    box-shadow: 2px 2px 2px black;
     position: absolute;
     border-radius: 9rem;    
     top: 2%;

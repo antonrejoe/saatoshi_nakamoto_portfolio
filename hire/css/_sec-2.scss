@@ -1,0 +1,25 @@
+
+
+
+
+
+section.sec-2{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    position: relative;
+}
+
+
+
+.card{
+    content: '';
+    height: 60%;
+    width: 65%;
+    display: block;
+    background-color: orange;
+    padding: 10% 0;
+    margin: auto;
+    border-radius: 2rem;
+    box-shadow: 4px 2px 4px  4px rgb(101, 101, 101);
+}
