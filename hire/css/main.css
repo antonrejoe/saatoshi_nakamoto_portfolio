@@ -1,0 +1,58 @@
+nav {
+  height: 12vh;
+  background-color: black;
+  content: "";
+  display: flex;
+}
+
+div.logo-Div {
+  content: "";
+  background-color: gray;
+  width: 300px;
+  height: 12vh;
+  display: inline-block;
+  position: absolute;
+}
+
+div.nav-items-container-Div {
+  width: 50vw;
+  height: 12vh;
+  display: flex;
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+}
+
+div.nav-item {
+  height: 12vh;
+  width: 20vh;
+  margin: auto;
+  background-color: blue;
+  content: "";
+}
+
+div.hire-btn-Div {
+  height: 8vh;
+  width: 10vw;
+  content: "";
+  background-color: pink;
+  position: absolute;
+  border-radius: 9rem;
+  top: 2%;
+  bottom: 0;
+  right: 8%;
+  box-sizing: content-box;
+  display: inline-block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}/*# sourceMappingURL=main.css.map */

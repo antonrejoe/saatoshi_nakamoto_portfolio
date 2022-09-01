@@ -1,0 +1,25 @@
+
+
+@import './sec-1';
+@import './sec-2';
+@import './nav';
+@import './foot';
+
+
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ html,body{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+ }
+
+
+
+
