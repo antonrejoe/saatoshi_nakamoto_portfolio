@@ -1,12 +1,21 @@
 
 
+footer{
+    display: block;
+    position: relative;
+    height: 5vh;
+    background-color: #fff;
+}
 
 footer > h5{
     font-size: 1.5rem;
     display: block;
-    height: fit-content;
-    height: -webkit-fit-content;
+    height: 5vh;
     width: fit-content;
+    width: -moz-fit-content;
     width: -webkit-fit-content;
-    margin: 0 auto;
+    margin:  auto;
+    color: #4C3D56;
+    position: relative;
+
 } 

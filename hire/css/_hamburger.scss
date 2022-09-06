@@ -1,0 +1,58 @@
+
+
+@import './animate';
+
+
+.line-1-rot{
+    
+    // transform: translateX(2px) rotate(45deg) translateY(-15px);
+    animation: line-1-change 1.1s forwards;
+    
+}
+
+
+.line-3-rot{
+    // transform: rotate(45deg);
+    animation: line-3-change 1.1s forwards;
+
+}
+
+
+.line-2-rot{
+    opacity: 0;
+    animation: line-2-change 0.7s forwards;
+
+}
+
+.burger-rotate{
+    rotate: 720deg;
+    animation: burger-rot 0.9s     forwards;
+}
+
+
+.line-1-rot-reverse{
+    
+    // transform: translateX(2px) rotate(45deg) translateY(-15px);
+    animation: line-1-change-reverse 1.1s forwards;
+    
+}
+
+
+.line-3-rot-reverse{
+    // transform: rotate(45deg);
+    animation: line-3-change-reverse 1.1s forwards;
+
+}
+
+
+.line-2-rot-reverse{
+    opacity: 1;
+    animation: line-2-change-reverse 0.7s forwards;
+
+}
+
+
+.burger-rotate-reverse{
+    rotate: 0deg;
+    animation: burger-rot-reverse 0.7s     forwards;
+}

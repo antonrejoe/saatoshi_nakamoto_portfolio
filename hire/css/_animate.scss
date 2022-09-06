@@ -1,0 +1,235 @@
+
+
+
+
+@keyframes slide-down {
+
+
+    0%{
+        transform: translateY(-100vh);
+        
+        
+    }
+
+    100%{
+        transform: translateY(0vh);
+        
+       
+    }
+    
+
+
+}
+
+
+
+@keyframes slide-up {
+
+
+    0%{
+        transform: translateY(0vh) ;
+        
+        
+    }
+
+    100%{
+        transform: translateY(-100vh);
+        
+       
+    }
+    
+}
+
+
+
+
+@keyframes border {
+
+    0%{
+       
+       scale: 0;
+       
+    }
+ 
+    100%{
+     
+      scale: 1;
+      
+    }
+    
+ }
+
+
+
+ @keyframes flip-card {
+
+    0%{
+        transform: rotateY(0turn);
+    }
+    100%{
+        transform: rotateY(0.5turn);
+    }
+ }
+
+
+
+ @keyframes flip-card-reverse {
+    
+
+    0%{
+        transform: rotateY(0.5turn);
+    }
+
+    100%{
+        transform: rotateY(0turn);
+    }
+ }
+
+
+
+ @keyframes i-visibility {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+ }
+
+
+@keyframes i-visibility-reverse {
+    0%{
+        opacity:0 ;
+    }
+
+    100%{
+        opacity:1;
+    }
+
+}
+
+
+
+@keyframes scale {
+    0%{
+        scale: 1;
+    }
+
+    100%{
+        scale: 1.5;
+    }
+
+
+    
+}
+
+
+
+@keyframes scale-2 {
+    0%{
+        scale: 1;
+    }
+
+    100%{
+        scale: 1.7;
+    }
+
+}
+
+
+
+@keyframes underline-reverse {
+    to{
+        scale: 0;
+    }
+    
+}
+
+
+
+// hamburger
+
+@keyframes line-1-change {
+    from{
+        transform:translateX(0px) rotate(0deg) translateY(0px);
+    }
+    to{
+        transform:translateX(8px) rotate(45deg) translateY(-10px);
+    }
+}
+
+
+
+@keyframes line-3-change {
+    from{
+        transform: rotate(0deg) translateY(0px) translateX(0px);
+    }
+    to{
+        transform: rotate(-45deg) translateY(2px) translateX(-20px);
+    }
+}
+
+
+
+@keyframes line-2-charge {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+@keyframes burger-rot {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 720deg;
+    }
+}
+
+// reverse jamburger
+
+@keyframes line-1-change-reverse {
+    from{
+        transform:translateX(8px) rotate(45deg) translateY(-10px);
+    }
+    to{
+        transform:translateX(0px) rotate(0deg) translateY(0px);
+    }
+}
+
+
+
+@keyframes line-3-change-reverse {
+    from{
+        transform: rotate(-45deg) translateY(2px) translateX(-20px);
+    }
+    to{
+        transform: rotate(0deg) translateY(0px) translateX(0px);
+    }
+}
+
+
+
+@keyframes line-2-charge-reverse {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes burger-rot-reverse {
+    from{
+        rotate: 720deg;
+    }
+    to{
+        rotate: 0deg;
+    }
+    
+}

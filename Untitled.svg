@@ -1,0 +1,50 @@
+<svg width="595" height="337" viewBox="0 0 595 337" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>.Frame_1_255 {
+	animation: 0.44s linear 0s 1 normal forwards running Frame_1_255;
+		fill: rgba(245,7,7,1);
+		transform: translateX(-969px) translateY(-216px) rotate(0deg);
+}
+@keyframes Frame_1_255 {
+	0% {
+		fill: rgba(245,7,7,1);
+		transform: translateX(-969px) translateY(-216px) rotate(0deg);
+	}
+	22.73% {
+		transform: translateX(-969px) translateY(-216px) rotate(0deg);
+	}
+	68.18% {
+		transform: translateX(-969px) translateY(-216px) rotate(-90deg);
+	}
+	100% {
+		transform: translateX(-969px) translateY(-216px) rotate(-180deg);
+		fill: rgba(245,7,7,1);
+	}
+}.Rectangle_1_267 {
+	animation: 0.44s linear 0s 1 normal forwards running Rectangle_1_267;
+		fill: rgba(0,0,0,1);
+		transform: translateX(131px) translateY(80px);
+}
+@keyframes Rectangle_1_267 {
+	0% {
+		fill: rgba(0,0,0,1);
+		transform: translateX(131px) translateY(80px);
+	}
+	90.91% {
+		fill: rgba(255,255,255,1);
+	}
+	97.73% {
+		transform: translateX(131px) translateY(80px);
+	}
+	100% {
+		transform: translateX(131px) translateY(80px);
+		fill: rgba(255,255,255,1);
+	}
+}
+</style>
+<g clip-path="url(#clip_0_770)" class="Frame_1_255" width="595" height="337" data-name="Frame 1">
+	<rect width="595" height="337" fill="#F50707" data-name="Frame 1"/>
+	<rect width="204" height="175" fill="black" stroke="white" data-name="Rectangle 1" class="Rectangle_1_267"/>
+</g>
+<defs><clipPath id="clip_0_770"><rect width="595" height="337"/></clipPath>
+</defs>
+</svg>

@@ -4,22 +4,201 @@
 
 
 section.sec-2{
-    height: 100vh;
+    height: 1000px;
     display: grid;
-    grid-template-columns: auto auto auto ;
+    grid-template-columns:repeat(3,1fr) ;
     position: relative;
-}
+    background-color: #fff;
+}   
 
 
 
 .card{
     content: '';
-    height: 60%;
+    height: 40%;
     width: 65%;
-    display: block;
-    background-color: orange;
+    display: flex;
+    background-color: #2BA8FD;
     padding: 10% 0;
     margin: auto;
     border-radius: 2rem;
     box-shadow: 4px 2px 4px  4px rgb(101, 101, 101);
+    transform: scale(1);
+}
+
+
+.card i {
+    
+    display: block;
+    height: fit-content;
+    height: -webkit-fit-content;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    margin: auto;
+    transition: all 1s;
+}
+
+
+ .card:hover{
+    
+    
+    opacity: 0.85;
+    transition: all 1s ease-in-out ;
+   
+    .card > a:has(i){
+        text-shadow:   rgba(128, 128, 128, 0.7);
+    }
+    
+}
+
+a:has(span):hover{
+    cursor: context-menu;
+}
+.card a{
+    display: block;
+    height: fit-content;
+    height: -webkit-fit-content;
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    margin: auto;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+
+
+
+ 
+ 
+ .card-rotate{
+    
+    animation: flip-card 0.5s forwards;
+    transition: all 1s ease;
+    
+    i.front{
+        opacity: 1;
+        animation: i-visibility 0.4s forwards;
+        animation-delay: 0.1s;
+    }
+ }
+
+ .card-rotate-reverse{
+    animation: flip-card-reverse 0.5s  forwards;
+    transition: all 1s ease;
+    transform: rotateY(0.5turn);
+
+    i.front{
+        opacity: 0;
+        animation: i-visibility-reverse 0.4s forwards;
+
+        animation-delay: 0.1s;
+    }
+ }
+
+
+ .card > a{
+    text-decoration: none;
+    display: inline-block;
+    
+    
+ }
+
+ .card > a > span {
+    font-size: 1.3rem;
+    display:block;
+    background-color: rgba(255, 255, 255, 0.715);
+    padding: 10px;
+    border-radius: 0.45rem;
+    height: fit-content;
+    height: -webkit-fit-content;
+    color: #4C3D56;
+    border-style: solid;
+    border: 2px 2px #4C3D56;
+    transition: all 1s;
+    
+ }
+
+ a:has(span):not(.logo-link):not(.hire-btn-Div) > span{
+    box-sizing: border-box;
+    display: block;
+    height: fit-content;
+    height: -webkit-fit-content;
+    text-align: center;
+    width: fit-content;
+    width: -webkit-fit-content;
+    margin: auto auto;
+    margin-top: 60%;
+    
+}
+
+.card > a > span:hover {
+    animation: scale 0.5s  ;
+    scale: 1.5;
+    box-shadow: #4C3D56 4px 4px ;
+    
+
+}
+
+
+.card:hover{
+    cursor: default;
+}
+
+// the one which comes after the flipping of the card
+
+.banana:hover{
+    scale: 1.7;
+    animation: scale-2 0.5s   alternate;
+}
+
+
+#card1,#card2,#card3 > a  > span:hover{
+    cursor: pointer;
+} 
+
+
+.card > a {
+    color: #4C3D56;
+    
+}
+
+
+
+.card-bg{
+    background-color: #ffffffb1;
+    
+   
+    
+    
+}
+
+
+
+// twitter dp style
+
+
+ 
+    
+
+
+
+.card > a > i{
+    text-shadow: 3px 3px rgba(255, 255, 255, 0.405);
+}
+
+
+// mera discord ///https://discord.com/users/934634687618486312 
+
+
+p.pop-up{
+    margin: 10%;
+    display: inline-block;
+    position: absolute;
+    z-index: 20;
+    background-color: rgba(255, 255, 255, 0.39);
+    padding: 8px;
+    left: 250px;
+    border-radius: .37rem;
 }

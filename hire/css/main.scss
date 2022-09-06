@@ -4,6 +4,9 @@
 @import './sec-2';
 @import './nav';
 @import './foot';
+@import './responsive';
+@import './animate';
+@import './hamburger';
 
 
 
@@ -17,10 +20,31 @@
 
  html,body{
     scroll-behavior: smooth;
+    
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    background-color: #2BA8FD;
+
+
  }
+
+::selection{
+   background-color: white;
+   color: #4C3D56;
+}
+
+
+ section{
+   overflow: hidden;
+ }
+
+
+
+
+
 
 
 
