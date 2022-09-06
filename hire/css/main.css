@@ -375,6 +375,10 @@ svg#ham-svg {
   visibility: hidden;
 }
 
+rect {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.344), white);
+}
+
 svg#ham-svg rect {
   background-color: rgb(65, 140, 253);
 }

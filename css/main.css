@@ -486,7 +486,7 @@ body {
   text-align: center;
   background-size: cover;
   align-items: center;
-  background: linear-gradient(to right, rgba(71, 71, 71, 0.9), rgba(71, 71, 71, 0.6)), url("../model-1.jpg") center top;
+  background: linear-gradient(to right, rgba(71, 71, 71, 0.9), rgba(71, 71, 71, 0.6));
 }
 
 h1.my_name {

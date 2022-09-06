@@ -185,7 +185,15 @@ svg#ham-svg{
     margin-right: 5%;    
     margin-top: 1.7%;
     visibility: hidden;
+}
+
+rect{
     
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.344),
+        white
+    );
 }
 
 
